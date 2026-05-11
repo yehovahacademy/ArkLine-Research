@@ -467,10 +467,6 @@
     box-shadow: 0 2px 8px rgba(29,158,117,0.3);
   }
 
-  .AboutFounder-avatar-badge i {
-    font-size: 10px;
-  }
-
   .AboutFounder-meta {
     margin-top: 0.75rem;
     display: flex;
