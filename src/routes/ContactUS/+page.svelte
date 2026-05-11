@@ -408,7 +408,7 @@
   }
 
   .ct-h2-dark { 
-    color: black;
+    color: var(--black);
     font-weight: 500;
     font-style:italic; 
 }
@@ -427,7 +427,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
-    color: black;
+    color: var(--black);
     margin: 0;
   }
 
@@ -506,7 +506,7 @@
     font-family: var(--ark-font-display);
     font-size: 1.1rem;
     font-style: italic;
-    color: black;
+    color: var(--black);
     display: block;
   }
 
@@ -519,7 +519,7 @@
 
   .ct-dark-signoff {
     font-style: italic;
-    color: black !important;
+    color: var(--black) !important;
     padding-top: 0.75rem;
     border-top: 0.5px solid var(--ark-dark-border);
     margin-top: 0.25rem;
@@ -573,7 +573,7 @@
     align-items: center;
     gap: 7px;
     background: rgba(29,158,117,0.15);
-    color: var(black);
+    color: var(--black);
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.14em;
@@ -595,7 +595,7 @@
     font-family: var(--ark-font-display);
     font-size: clamp(1.6rem, 3vw, 2.25rem);
     font-weight: 700;
-    color: black;
+    color: var(--black);
     margin: 0 0 1.25rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -609,7 +609,7 @@
   .ct-cta-para {
     font-size: 14px;
     line-height: 1.8;
-    color: black;
+    color: var(--black);
     margin: 0 0 1.75rem;
   }
 
@@ -625,7 +625,7 @@
     align-items: center;
     gap: 8px;
     font-size: 12px;
-    color: black;
+    color:var(--black);
   }
 
   .ct-step-num {
@@ -638,7 +638,7 @@
     justify-content: center;
     font-size: 10px;
     font-weight: 600;
-    color: black;
+    color: var(--black);
     flex-shrink: 0;
   }
 
@@ -681,7 +681,7 @@
     font-family: var(--ark-font-display);
     font-size: 1.4rem;
     font-weight: 700;
-    color: black;
+    color: var(--black);
     line-height: 1;
   }
 

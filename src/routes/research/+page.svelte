@@ -149,7 +149,7 @@
   font-size: 16px;      /* 16px */
   font-weight: 500;
   line-height: 1.85;
-  color: black;
+  color:var(--black);
   margin: 0 0 1.5rem 0;
   padding-bottom: 1.5rem;
   border-bottom: 0.5px solid var(--color-line);
@@ -163,7 +163,7 @@
   font-size: 16px;        /* 14px */
   font-weight: 500;
   line-height: 1.95;
-  color:black;
+  color:var(--black);
   margin: 0;
   letter-spacing: 0.1px;
 }

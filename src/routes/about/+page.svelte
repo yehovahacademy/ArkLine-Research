@@ -314,7 +314,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
-    color: black;
+    color: var(--black);
     margin: 0;
   }
 
@@ -394,7 +394,7 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 1.7;
-    color: black;
+    color: var(--black);
     margin: 0;
   }
 
@@ -527,7 +527,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1.85;
-    color: black;
+    color: var(--black);
     margin-bottom: 1.1rem;
     font-style: bold;
   }

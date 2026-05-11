@@ -331,7 +331,7 @@
   font-family: var(--ff-body);
   font-size: 13.5px;
   font-weight: 500;
-  color: black;
+  color: var(--black);
   text-decoration: none;
   letter-spacing: 0.1px;
   transition: color var(--duration) var(--ease);

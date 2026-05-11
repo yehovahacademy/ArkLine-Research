@@ -142,7 +142,7 @@
     font-family: var(--ark-font-body);
     text-align: center;
     font-weight: 500;
-    color: black;
+    color: var(--black);
   }
 
   .svc-eyebrow {
@@ -201,7 +201,7 @@
     font-size: 15.5px;
     font-weight: 500;
     line-height: 1.85;
-    color: black;
+    color: var(--black);
     margin-bottom: 1rem;
     text-align: left;
   }
@@ -310,7 +310,7 @@
     font-size: 13.5px;
     font-weight: 500;
     line-height: 1.8;
-    color: black;
+    color: var(--black);
     margin: 0;
   }
 
@@ -355,7 +355,7 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 1.85;
-    color: black;
+    color: var(--black);
     margin: 0 0 0.75rem;
   }
 
