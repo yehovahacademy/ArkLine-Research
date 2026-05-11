@@ -1,8 +1,12 @@
 <script>
-
-  let currentPage = 'home'; // Or whatever default value you want
+  // State variables for the UI
+  let currentPage = 1;
+  let totalPages = 3; // Set this to the number of slides/pages you have
   let translateX = 0;
-  let currentStep = 0; // Add this too, just in case it's next!
+  let currentStep = 0;
+  let active = false;
+  
+  // Add any other variables you think the HTML might be using
 </script>
 
 <!-- ══ HERO ══ -->
