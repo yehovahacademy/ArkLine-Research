@@ -1,5 +1,7 @@
 <script>
 
+  let currentPage = 'home'; // Or whatever default value you want
+
 </script>
 
 <!-- ══ HERO ══ -->
