@@ -439,15 +439,17 @@ onMount(() => {
 
   <!-- Dots -->
   <div class="slider-dots">
-    {#each Array(totalPages) as _, i}
-      <button
-        class="dot"
-        class:active={i === currentPage}
-        aria-label="Go to page {i + 1}"
-        onclick={() => goTo(i)}
-      />
-    {/each}
-  </div>
+  {#each Array(totalPages) as _, i}
+    <button
+      type="button"
+      class="dot"
+      class:active={i === currentPage}
+      aria-label="Go to page {i + 1}"
+      onclick={() => goTo(i)}
+    >
+    </button>
+  {/each}
+</div>
 
 </div><!-- /.articles-container -->
 

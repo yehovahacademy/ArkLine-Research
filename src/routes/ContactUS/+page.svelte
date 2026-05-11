@@ -400,7 +400,7 @@
     font-family: var(--ark-font-display);
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(black);
+    color:black;
     margin: 0;
     line-height: 1.2;
     letter-spacing: -0.01em;

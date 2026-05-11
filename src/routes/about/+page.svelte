@@ -434,7 +434,7 @@
   .AboutFounder-avatar {
     width: 95%;
     height: 95%;
-    border-radius: var(28px);
+    border-radius:28px;
     overflow: hidden;
     border: 2px solid var(--ark-accent-light);
     box-shadow: 0 0 0 1px var(--ark-accent), 0 8px 24px rgba(29,158,117,0.12);
