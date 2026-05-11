@@ -1,7 +1,8 @@
 <script>
 
   let currentPage = 'home'; // Or whatever default value you want
-
+  let translateX = 0;
+  let currentStep = 0; // Add this too, just in case it's next!
 </script>
 
 <!-- ══ HERO ══ -->
