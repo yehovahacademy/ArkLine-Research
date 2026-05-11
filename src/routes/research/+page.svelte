@@ -23,35 +23,35 @@
   <div class="Research-Categories-grid">
 
     <div class="Research-Category-card">
-      <span class="Research-Category-number">01</span>
+      <span class="Research-Category-number"></span>
       <h2><i class="fa-solid fa-magnifying-glass-chart"></i>
         Freight Markets</h2>
       <p>We provide in-depth analysis of freight rate movements, vessel supply-demand dynamics, market volatility, and the underlying factors shaping freight performance across key shipping segments. Our research helps maritime professionals understand market direction, identify emerging trends, and make better-informed commercial decisions in a rapidly changing freight environment.</p>
     </div>
 
     <div class="Research-Category-card">
-      <span class="Research-Category-number">02</span>
+      <span class="Research-Category-number"></span>
       <h2><i class="fa-solid fa-anchor-circle-check"></i>
         Voyage Economics</h2>
       <p>Our voyage economics research focuses on the commercial drivers that impact voyage profitability, including bunker costs, port expenses, operational delays, and voyage performance metrics. By evaluating the economics behind freight operations, we help industry stakeholders assess cost exposure, improve margin visibility, and strengthen commercial planning.</p>
     </div>
 
     <div class="Research-Category-card">
-      <span class="Research-Category-number">03</span>
+      <span class="Research-Category-number"></span>
       <h2><i class="fa-brands fa-periscope"></i>
         Demurrage & Operational Risk</h2>
       <p>We analyse the operational factors that contribute to delay exposure, demurrage costs, and margin leakage during voyage execution. From laytime risks and port inefficiencies to operational bottlenecks, our research provides actionable insights that help commercial teams improve risk visibility, protect margins, and respond more effectively to disruptions.</p>
     </div>
 
     <div class="Research-Category-card">
-      <span class="Research-Category-number">04</span>
+      <span class="Research-Category-number"></span>
       <h2><i class="fa-solid fa-brain"></i>
         Trade Flow Intelligence</h2>
       <p>Our trade flow intelligence research examines how geopolitical developments, sanctions, cargo flow shifts, and macroeconomic events influence freight demand and global shipping patterns. By interpreting the commercial impact of external market forces, we help stakeholders anticipate disruptions and adapt strategies in an evolving trade environment.</p>
     </div>
 
     <div class="Research-Category-card">
-      <span class="Research-Category-number">05</span>
+      <span class="Research-Category-number"></span>
       <h2><i class="fa-solid fa-at"></i>
         Commercial Strategy</h2>
       <p>We deliver strategic insights into chartering decisions, market positioning, freight risk management, and the commercial approaches required to navigate increasingly complex shipping markets. Our research supports smarter strategic planning by helping maritime professionals align market intelligence with commercial action.</p>
@@ -67,6 +67,31 @@
 
 <style>
   /* ── Research Paragraph ── */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TYPOGRAPHIC SCALE
+   Built on a 1.25 (Major Third) ratio, base 14px.
+   --fs-xs   : 11px  — eyebrows, labels
+   --fs-sm   : 14px  — body secondary
+   --fs-base : 16px  — body primary (lead)
+   --fs-md   : 20px  — (reserved)
+   --fs-lg   : 26px  — card headings
+   --fs-xl   : 36px  — section headings (mobile)
+   --fs-2xl  : 48px  — display headings (desktop)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  --fs-xs:   11px;
+  --fs-sm:   14px;
+  --fs-base: 16px;
+  --fs-md:   20px;
+  --fs-lg:   26px;
+  --fs-xl:   36px;
+  --fs-2xl:  48px;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   RESEARCH PARA
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .Research-Para {
   margin-top: 1.5rem;
   padding: 4rem 3.5rem;
@@ -74,7 +99,9 @@
   border: 0.5px solid var(--color-line);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
 
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -83,9 +110,10 @@
   row-gap: 0;
 }
 
+/* ── Display heading ── */
 .Research-Para h1 {
   font-family: var(--ff-display);
-  font-size: 48px;
+  font-size: var(--fs-2xl);       /* 48px */
   font-weight: 400;
   letter-spacing: 4px;
   color: var(--color-ink);
@@ -96,41 +124,46 @@
   position: sticky;
   top: 6rem;
   align-self: start;
-  transition: color 0.25s ease;
+  transition: color 0.3s ease;
 }
 
 .Research-Para h1::after {
   content: '';
   display: block;
   width: 28px;
-  height: 1px;
+  height: 0.5px;
   background: var(--color-line-2);
   margin-top: 1.25rem;
+  transition: width 0.3s ease;
 }
 
-/* First p — lead paragraph */
+.Research-Para:hover h1::after {
+  width: 48px;
+}
+
+/* ── Lead paragraph ── */
 .Research-Para p:first-of-type {
   grid-column: 2;
   grid-row: 1;
   font-family: var(--ff-body);
-  font-size: 16.5px;
-  font-weight: 400;
+  font-size: 16px;      /* 16px */
+  font-weight: 500;
   line-height: 1.85;
-  color: var(--color-ink);
+  color: black;
   margin: 0 0 1.5rem 0;
   padding-bottom: 1.5rem;
   border-bottom: 0.5px solid var(--color-line);
-  letter-spacing: 0.1px;
+  letter-spacing: 0.15px;
 }
 
-/* Subsequent p — supporting paragraphs */
+/* ── Supporting paragraphs ── */
 .Research-Para p:not(:first-of-type) {
   grid-column: 2;
   font-family: var(--ff-body);
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;        /* 14px */
+  font-weight: 500;
   line-height: 1.95;
-  color: var(--color-ink-2);
+  color:black;
   margin: 0;
   letter-spacing: 0.1px;
 }
@@ -150,7 +183,7 @@
   }
 
   .Research-Para h1 {
-    font-size: 36px;
+    font-size: var(--fs-xl);      /* 36px */
     grid-column: 1;
     grid-row: 1;
     position: static;
@@ -159,21 +192,27 @@
   .Research-Para p:first-of-type {
     grid-column: 1;
     grid-row: 2;
-    font-size: 15px;
+    /* stays at --fs-base (16px) — no change needed */
   }
 
   .Research-Para p:not(:first-of-type) {
     grid-column: 1;
   }
 }
-/* ── Research Categories ── */
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   RESEARCH CATEGORIES
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .Research-Categories {
   margin-top: 1.5rem;
   border: 0.5px solid var(--color-line);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
   overflow: hidden;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 /* ── Header ── */
@@ -182,12 +221,13 @@
   border-bottom: 0.5px solid var(--color-line);
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.75rem;
 }
 
+/* ── Eyebrow ── */
 .Research-Categories-eyebrow {
   font-family: var(--ff-body);
-  font-size: 11px;
+  font-size: var(--fs-xs);        /* 11px */
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -206,15 +246,16 @@
   flex-shrink: 0;
 }
 
+/* ── Header display heading ── */
 .Research-Categories-header h1 {
   font-family: var(--ff-display);
-  font-size: 48px;
+  font-size: var(--fs-2xl);       /* 48px */
   font-weight: 400;
   letter-spacing: 4px;
   color: var(--color-ink);
   line-height: 1;
   margin: 0;
-  transition: color 0.25s ease;
+  transition: color 0.3s ease;
 }
 
 /* ── Grid ── */
@@ -232,7 +273,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
-  transition: background 0.22s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease;
 }
 
 .Research-Category-card:hover {
@@ -249,10 +292,10 @@
   border-bottom: none;
 }
 
-/* ── Number ── */
+/* ── Number label ── */
 .Research-Category-number {
   font-family: var(--ff-display);
-  font-size: 13px;
+  font-size: var(--fs-xs);        /* 11px — aligns with eyebrow scale */
   font-weight: 400;
   letter-spacing: 3px;
   color: var(--color-ink-3);
@@ -261,22 +304,22 @@
 /* ── Card heading ── */
 .Research-Category-card h2 {
   font-family: var(--ff-display);
-  font-size: 26px;
+  font-size: var(--fs-lg);        /* 26px */
   font-weight: 400;
   letter-spacing: 2px;
   color: var(--color-ink);
   line-height: 1.1;
   margin: 0;
-  transition: color 0.22s ease;
+  transition: color 0.25s ease;
 }
 
 /* ── Card body ── */
 .Research-Category-card p {
   font-family: var(--ff-body);
-  font-size: 13.5px;
-  font-weight: 400;
+  font-size: 16px;        /* 14px */
+  font-weight: 500;
   line-height: 1.9;
-  color: var(--color-ink-2);
+  color: balck;
   margin: 0;
   letter-spacing: 0.1px;
 }
@@ -286,16 +329,18 @@
   background: var(--color-raised);
   border-right: none;
   justify-content: center;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .Research-Category-card--closing p {
-  font-family: var(--ff-body);
-  font-size: 15px;
-  font-weight: 400;
-  font-style: italic;
+  font-size: 16px;      /* 16px — elevated from body, aligned with lead */
+  font-style: Atops;
   line-height: 1.85;
-  color: var(--color-ink);
+  color: black;
   letter-spacing: 0.1px;
+  font-weight: 500;
 }
 
 .Research-Category-card--closing:hover {
@@ -309,7 +354,7 @@
   }
 
   .Research-Categories-header h1 {
-    font-size: 36px;
+    font-size: var(--fs-xl);      /* 36px */
   }
 
   .Research-Categories-grid {
@@ -321,6 +366,7 @@
     padding: 2rem 1.75rem;
   }
 
+  /* On single-column layout, restore dividers except the last card */
   .Research-Category-card:nth-last-child(-n+2) {
     border-bottom: 0.5px solid var(--color-line);
   }
@@ -329,5 +375,4 @@
     border-bottom: none;
   }
 }
-
 </style>

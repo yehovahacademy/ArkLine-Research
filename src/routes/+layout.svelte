@@ -3,7 +3,7 @@
 
 <div class="Navbar">
   <div class="Navbar-brand">
-    <img src="/ARKLINE LOGO.jpg" alt="ARKLINE Logo" width="32" height="32" />
+    <img src="/arkline-logo.jpg" alt="ARKLINE Logo" width="32" height="32" />
     <h1>ARKLINE</h1>
   </div>
 
@@ -32,7 +32,7 @@
 
     <div class="Footer-brand">
       <div class="Footer-brand-row">
-        <img src="/ARKLINE LOGO.jpg" alt="ARKLINE Logo" width="28" height="28" />
+        <img src="/arkline-logo.jpg" alt="ARKLINE Logo" width="28" height="28" />
         <span class="Footer-wordmark">ARKLINE</span>
       </div>
       <p class="Footer-tagline">
@@ -161,8 +161,8 @@
 }
 
 .Navbar-brand img {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
   border-radius: 50px;
   object-fit: cover;
   display: block;
@@ -277,9 +277,9 @@
 }
 
 .Footer-brand-row img {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
   object-fit: cover;
   border: 0.5px solid var(--color-line);
   display: block;
@@ -296,10 +296,10 @@
 .Footer-tagline {
   font-family: var(--ff-body);
   font-size: 13.5px;
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
   line-height: 1.75;
-  color: var(--color-ink-3);
+  color: black;
   max-width: 260px;
   margin: 0;
 }
@@ -330,8 +330,8 @@
 .Footer-col a {
   font-family: var(--ff-body);
   font-size: 13.5px;
-  font-weight: 400;
-  color: var(--color-ink-3);
+  font-weight: 500;
+  color: black;
   text-decoration: none;
   letter-spacing: 0.1px;
   transition: color var(--duration) var(--ease);

@@ -69,16 +69,45 @@ onMount(() => {
 </div>
 
 <!-- ══ INTRO ══ -->
-<div class="Introduction">
-  <h1>Introduction to ARKLINE</h1>
-  <h2>
-    ARKLINE Research is the intelligence engine behind ARKLINE, focused on decoding the complexities
-    of global maritime trade. We deliver high-conviction, data-driven insights across freight markets,
-    tanker shipping, and evolving logistics dynamics — cutting through noise to highlight what truly
-    drives the market. Our mission is to bring transparency and precision to shipping intelligence,
-    building the foundation for a more efficient, data-led, and digitally enabled maritime ecosystem.
-  </h2>
-</div>
+<section class="Introduction">
+
+  <!-- Left col: logo lockup -->
+  <div class="Introduction-logo-wrap">
+    <span class="Introduction-eyebrow">Est. Research Division</span>
+    <img
+      class="Introduction-logo"
+      src="arkline-logo.jpg"
+      alt="ARKLINE logo"
+    />
+    <span class="Introduction-wordmark">ARKLINE</span>
+  </div>
+
+  <!-- Right col: text -->
+  <div class="Introduction-body">
+    <p class="Introduction-label">Introduction</p>
+
+    <h1 class="Introduction-heading">
+        Intelligence for<br/>Global Maritime Trade
+    </h1>
+
+    <p class="Introduction-lead">
+      ARKLINE Research is the intelligence engine behind ARKLINE, focused on
+      decoding the complexities of global maritime trade. We deliver
+      high-conviction, data-driven insights across freight markets, tanker
+      shipping, and evolving logistics dynamics — cutting through noise to
+      highlight what truly drives the market.
+    </p>
+
+    <p class="Introduction-supporting">
+      Our mission is to bring transparency and precision to shipping
+      intelligence, building the foundation for a more efficient, data-led, and
+      digitally enabled maritime ecosystem.
+    </p>
+
+    <div class="Introduction-rule" aria-hidden="true"></div>
+  </div>
+
+</section>
 
 <br /><br />
 
@@ -102,7 +131,7 @@ onMount(() => {
       class="arrow-btn"
       aria-label="Previous Page"
       disabled={currentPage === 0}
-      on:click={() => goTo(currentPage - 1)}
+      onclick={() => goTo(currentPage - 1)}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -398,7 +427,7 @@ onMount(() => {
       class="arrow-btn"
       aria-label="Next Page"
       disabled={currentPage === totalPages - 1}
-      on:click={() => goTo(currentPage + 1)}
+      onclick={() => goTo(currentPage + 1)}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -415,7 +444,7 @@ onMount(() => {
         class="dot"
         class:active={i === currentPage}
         aria-label="Go to page {i + 1}"
-        on:click={() => goTo(i)}
+        onclick={() => goTo(i)}
       />
     {/each}
   </div>
@@ -506,47 +535,223 @@ onMount(() => {
   /* ══════════════════════════════════════
      INTRODUCTION
   ══════════════════════════════════════ */
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     INTRODUCTION
+     Two-column layout mirroring .Research-Para:
+       left  → logo lockup (sticky)
+       right → text content
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
   .Introduction {
+    margin-top: 1.5rem;
     padding: 4rem 3.5rem;
     background: var(--color-surface);
     border: 0.5px solid var(--color-line);
     border-radius: var(--radius-lg);
-    margin-top: 1.5rem;
+    overflow: hidden;
+    transition:
+      background 0.3s ease,
+      border-color 0.3s ease;
+ 
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    column-gap: 4rem;
     align-items: start;
+ 
+    /* Entrance animation */
+    animation: intro-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-
-  .Introduction h1 {
-    font-family: var(--ff-display);
-    font-size: 38px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: var(--color-ink);
-    line-height: 1.1;
-    margin: 0;
+ 
+  @keyframes intro-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  /* ── Left: Logo lockup ── */
+  .Introduction-logo-wrap {
     position: sticky;
     top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: intro-fade-up 0.7s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-
-  .Introduction h1::after {
+ 
+  .Introduction-eyebrow {
+    font-family: var(--ff-body);
+    font-size: var(--fs-xs);       /* 11px */
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .Introduction-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 0.5px;
+    background: var(--color-line-2);
+    flex-shrink: 0;
+  }
+ 
+  .Introduction-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 0.5px solid var(--color-line);
+    padding: 1.5rem;
+    background: var(--color-raised);
+    transition:
+      border-color 0.3s ease,
+      background 0.3s ease,
+      transform 0.3s ease;
+  }
+ 
+  .Introduction-logo:hover {
+    transform: scale(1.02);
+    border-color: var(--color-line-2);
+  }
+ 
+  .Introduction-wordmark {
+    font-family: var(--ff-display);
+    font-size: var(--fs-xs);       /* 11px */
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+ 
+  /* ── Right: Text content ── */
+  .Introduction-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    animation: intro-fade-up 0.7s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+ 
+  /* "Introduction" label — mirrors .Research-Categories-eyebrow */
+  .Introduction-label {
+    font-family: var(--ff-body);
+    font-size: var(--fs-xs);       /* 11px */
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .Introduction-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 0.5px;
+    background: var(--color-line-2);
+    flex-shrink: 0;
+  }
+ 
+  /* Main display heading */
+  .Introduction-heading {
+    font-family: var(--ff-display);
+    font-size: 48px;      /* 48px */
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--color-ink);
+    line-height: 1.05;
+    margin: 0 0 2rem 0;
+    transition: color 0.3s ease;
+  }
+ 
+  .Introduction-heading::after {
     content: '';
     display: block;
     width: 28px;
-    height: 1px;
+    height: 0.5px;
     background: var(--color-line-2);
     margin-top: 1.25rem;
+    transition: width 0.3s ease;
   }
-
-  .Introduction h2 {
+ 
+  .Introduction:hover .Introduction-heading::after {
+    width: 48px;
+  }
+ 
+  /* Lead paragraph — mirrors .Research-Para p:first-of-type */
+  .Introduction-lead {
     font-family: var(--ff-body);
-    font-size: 15px;
+    font-size: var(--fs-base);     /* 16px */
+    font-weight: 400;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
+  }
+ 
+  /* Supporting paragraph — mirrors .Research-Para p:not(:first-of-type) */
+  .Introduction-supporting {
+    font-family: var(--ff-body);
+    font-size: var(--fs-sm);       /* 14px */
     font-weight: 400;
     line-height: 1.95;
     color: var(--color-ink-2);
-    margin: 0;
+    margin: 1.4rem 0 0 0;
     letter-spacing: 0.1px;
+  }
+ 
+  /* Bottom rule */
+  .Introduction-rule {
+    margin-top: 2rem;
+    width: 28px;
+    height: 0.5px;
+    background: var(--color-line-2);
+  }
+ 
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     RESPONSIVE
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  @media (max-width: 768px) {
+    .Introduction {
+      padding: 2rem 1.75rem;
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+ 
+    .Introduction-logo-wrap {
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.25rem;
+    }
+ 
+    .Introduction-logo {
+      max-width: 72px;
+      padding: 0.75rem;
+    }
+ 
+    .Introduction-eyebrow {
+      display: none; /* hidden on mobile; wordmark takes over */
+    }
+ 
+    .Introduction-heading {
+      font-size: var(--fs-xl);     /* 36px */
+    }
   }
 
   /* ══════════════════════════════════════
