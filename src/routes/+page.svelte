@@ -1,10 +1,19 @@
 <script>
   // State variables for the UI
-  let currentPage = 1;
-  let totalPages = 3; // Set this to the number of slides/pages you have
+  // Set this to the number of slides/pages you have
   let translateX = 0;
   let currentStep = 0;
   let active = false;
+
+
+    let currentPage = 0;
+  let totalPages = 5;
+
+  function goTo(page) {
+    if (page >= 0 && page < totalPages) {
+      currentPage = page;
+    }
+  }
   
   // Add any other variables you think the HTML might be using
 </script>
@@ -26,7 +35,7 @@
       src="arkline-logo.jpg"
       alt="ARKLINE logo"
     />
-    <span class="Introduction-wordmark">ARKLINE</span>
+    <span class="Introduction-wordmark"></span>
   </div>
 
   <!-- Right col: text -->
@@ -73,25 +82,33 @@
 
   <div class="articles-slider-wrapper">
 
-    <!-- Prev -->
-    <button
-      class="arrow-btn"
-      aria-label="Previous Page"
-      disabled={currentPage === 0}
-      onclick={() => goTo(currentPage - 1)}
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M15 18l-6-6 6-6" />
-      </svg>
-    </button>
-
+   <!-- Previous -->
+<button
+  class="arrow-btn"
+  aria-label="Previous Page"
+  disabled={currentPage === 0}
+  onclick={() => goTo(currentPage - 1)}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M15 18l-6-6 6-6" />
+  </svg>
+</button>
     <!-- Viewport -->
     <div class="articles-slider-viewport">
       <div
         class="articles-slider-track"
         bind:this={track}
-        style="transform: translateX(-{translateX}%)"
+        style="transform: translateX(-{currentPage*100}%);"
       >
 
         <!-- Card 1 -->
@@ -369,18 +386,27 @@
       </div><!-- /.articles-slider-track -->
     </div><!-- /.articles-slider-viewport -->
 
-    <!-- Next -->
-    <button
-      class="arrow-btn"
-      aria-label="Next Page"
-      disabled={currentPage === totalPages - 1}
-      onclick={() => goTo(currentPage + 1)}
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 18l6-6-6-6" />
-      </svg>
-    </button>
+   <!-- Next -->
+<button
+  class="arrow-btn"
+  aria-label="Next Page"
+  disabled={currentPage === totalPages - 1}
+  onclick={() => goTo(currentPage + 1)}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M9 18l6-6-6-6" />
+  </svg>
+</button>
 
   </div><!-- /.articles-slider-wrapper -->
 
@@ -576,11 +602,14 @@
  
   .Introduction-wordmark {
     font-family: var(--ff-display);
-    font-size: var(--fs-xs);       /* 11px */
+    font-size: 16px;       /* 11px */
     font-weight: 400;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: var(--color-ink-3);
+    color: black;
+    font-weight: 500;
+    padding:24px;
+
   }
  
   /* ── Right: Text content ── */
@@ -643,8 +672,8 @@
   /* Lead paragraph — mirrors .Research-Para p:first-of-type */
   .Introduction-lead {
     font-family: var(--ff-body);
-    font-size: var(--fs-base);     /* 16px */
-    font-weight: 400;
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
     line-height: 1.85;
     color: var(--color-ink);
     margin: 0 0 1.5rem 0;
@@ -656,10 +685,10 @@
   /* Supporting paragraph — mirrors .Research-Para p:not(:first-of-type) */
   .Introduction-supporting {
     font-family: var(--ff-body);
-    font-size: var(--fs-sm);       /* 14px */
-    font-weight: 400;
+    font-size: 14px;       /* 14px */
+    font-weight: 500;
     line-height: 1.95;
-    color: var(--color-ink-2);
+    color: black;
     margin: 1.4rem 0 0 0;
     letter-spacing: 0.1px;
   }
@@ -746,10 +775,11 @@
 
   .article-introduction p {
     font-size: 15px;
-    color: #555;
+    color: black;
     max-width: 720px;
     margin: 0 auto;
     line-height: 1.75;
+    font-weight: 500;
   }
 
   /* ══════════════════════════════════════

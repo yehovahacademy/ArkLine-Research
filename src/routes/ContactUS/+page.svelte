@@ -52,7 +52,7 @@
           <div class="ct-contact-icon"><i class="fa-solid fa-envelope"></i></div>
           <div>
             <span class="ct-contact-label">Email</span>
-            <a href="mailto:C.Deepakchelladurai@gmail.com" class="ct-contact-value">C.Deepakchelladurai@gmail.com</a>
+            <a href="mailto:admin@arklineresearch.com" class="ct-contact-value">admin@arklineresearch.com</a>
           </div>
         </div>
         <div class="ct-contact-row">
@@ -66,7 +66,7 @@
           <div class="ct-contact-icon"><i class="fab fa-linkedin"></i></div>
           <div>
             <span class="ct-contact-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/deepakchelladurai/" target="_blank" rel="noopener noreferrer" class="ct-contact-value">Deepak Chelladurai</a>
+            <a href="https://www.linkedin.com/company/arklineresearch/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="ct-contact-value">ARKLINE RESEARCH</a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
         <i class="fa-solid fa-comment"></i>
       </div>
       <div>
-        <span class="ct-card-index ct-index-dark">02</span>
+        <span class="ct-card-index ct-index-dark"></span>
         <h2 class="ct-h2-dark">A Closing Word</h2>
       </div>
     </div>

@@ -31,7 +31,7 @@
         <i class="fa-solid fa-brain"></i>
       </div>
       <div>
-        <span class="svc-card-index">01</span>
+        <span class="svc-card-index"></span>
         <h2>Freight Market Intelligence</h2>
       </div>
     </div>
@@ -48,7 +48,7 @@
         <i class="fa-solid fa-user-tie"></i>
       </div>
       <div>
-        <span class="svc-card-index">02</span>
+        <span class="svc-card-index"></span>
         <h2>Freight Advisory</h2>
       </div>
     </div>
@@ -65,7 +65,7 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div>
-        <span class="svc-card-index">03</span>
+        <span class="svc-card-index"></span>
         <h2>Bespoke Research</h2>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <i class="fa-solid fa-database"></i>
       </div>
       <div>
-        <span class="svc-card-index">04</span>
+        <span class="svc-card-index"></span>
         <h2>Data Interpretation</h2>
       </div>
     </div>
