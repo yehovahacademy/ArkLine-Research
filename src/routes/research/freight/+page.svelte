@@ -28,13 +28,6 @@
       <p class="freight-market-para-5">
         By delivering timely and practical market insight, ARKLINE RESEARCH helps industry stakeholders strengthen chartering strategies, improve market awareness, and make smarter commercial decisions in volatile freight markets.
       </p>
-
-
-    
-
-    <footer class="feature-footer">
-      <p>Strengthen your chartering strategies with timely, practical market intelligence.</p>
-    </footer>
   </div>
 </section>
   
@@ -138,18 +131,6 @@
   }
 
   .freight-market-para-5 {
-    font-family: var(--ff-body);
-    font-size: 16px;     /* 16px */
-    font-weight: 500;
-    line-height: 1.85;
-    color: var(--color-ink);
-    margin: 0 0 1.5rem 0;
-    padding-bottom: 1.5rem;
-    border-bottom: 0.5px solid var(--color-line);
-    letter-spacing: 0.15px;
-  }
-
-  .feature-footer {
     font-family: var(--ff-body);
     font-size: 16px;     /* 16px */
     font-weight: 500;
