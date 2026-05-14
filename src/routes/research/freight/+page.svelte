@@ -1,38 +1,36 @@
 <script>
-  const tags = ['Rate movements', 'Supply & demand', 'Market volatility', 'Emerging trends'];
+ ;
 </script>
-<div class="hero"></div>
+
 <section class="freight-market-intro">
-  <div class="badge">
-    <span class="badge-dot"></span>
-    <span class="badge-text">Market intelligence</span>
-  </div>
+  
 
  <section class="research-feature">
   <div class="container">
-    <header class="feature-header">
-      <h2 class="title">Freight Market Intelligence</h2>
-      <p class="lead-text">
-        ARKLINE RESEARCH provides focused, commercially relevant analysis of freight market movements, rate volatility, and supply-demand dynamics across key shipping segments.
+      <h2 class="title">Freight Markets</h2>
+      <br>
+      <p class="freight-market-para-1">
+        ARKLINE RESEARCH provides focused and commercially relevant analysis of freight market movements, rate volatility, vessel availability, and supply-demand dynamics across key shipping segments. In an increasingly complex and fast-moving freight environment, understanding the forces that influence market behaviour is essential for making informed commercial decisions.
       </p>
-    </header>
+      <br><br>
+      <p class="freight-market-para-2">
+        Our freight market intelligence goes beyond tracking rate changes. We analyse the underlying commercial drivers that influence freight movements, including vessel positioning, cargo demand shifts, regional imbalances, seasonal trends, geopolitical developments, and macroeconomic pressures. By interpreting these market signals in context, we help stakeholders understand why markets are moving, where risks are emerging, and what the implications may be for future freight decisions.
+      </p>
+      <br><br>
+      <p class="freight-market-para-3">
+        Freight markets are influenced by a wide range of dynamic variables that can rapidly affect freight exposure and commercial outcomes. Market participants need more than raw data—they need insight that transforms market complexity into practical commercial understanding. At ARKLINE RESEARCH, we convert freight market information into actionable intelligence that supports clearer visibility and stronger strategic planning.
+      </p>
+      <br><br>
+      <p class="freight-market-para-4">
+        Our analysis is designed to help traders, shipowners, charterers, and operators identify emerging trends, assess market opportunities, and respond more effectively to volatility. Whether evaluating freight direction, monitoring changing supply-demand balances, or assessing exposure in uncertain market conditions, our freight intelligence supports better decision-making with greater confidence.
+      </p>
+      <br><br>
+      <p class="freight-market-para-5">
+        By delivering timely and practical market insight, ARKLINE RESEARCH helps industry stakeholders strengthen chartering strategies, improve market awareness, and make smarter commercial decisions in volatile freight markets.
+      </p>
 
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Actionable Insight</h3>
-        <p>We go beyond tracking rate changes to analyze underlying drivers like vessel positioning, cargo demand shifts, and regional imbalances.</p>
-      </div>
 
-      <div class="feature-card">
-        <h3>Strategic Planning</h3>
-        <p>Convert market complexity into practical understanding to support clearer visibility and stronger strategic planning in fast-moving environments.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Decision Support</h3>
-        <p>Empowering traders, shipowners, and charterers to identify emerging trends, assess risks, and respond effectively to market volatility.</p>
-      </div>
-    </div>
+    
 
     <footer class="feature-footer">
       <p>Strengthen your chartering strategies with timely, practical market intelligence.</p>
@@ -40,31 +38,12 @@
   </div>
 </section>
   
-
-
-  <div class="tags">
-    {#each tags as tag}
-      <span class="tag">{tag}</span>
-    {/each}
-  </div>
 </section>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Instrument+Sans:wght@300;400;500&display=swap');
 
 
-  .hero {
-    height: 100vh;
-    border-radius:35px;
-     background-image:  linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ), url('/article4.png');
-     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  }
 
   .freight-market-intro {
     display: flex;
@@ -74,56 +53,6 @@
     padding: 3.5rem 2rem 3rem;
     max-width: 680px;
     margin: 0 auto;
-  }
-
-  /* Badge */
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #e1f5ee;
-    border: 0.5px solid #5dcaa5;
-    border-radius: 999px;
-    padding: 5px 16px;
-    margin-bottom: 2rem;
-  }
-  .badge-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #1d9e75;
-    flex-shrink: 0;
-  }
-  .badge-text {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: #085041;
-  }
-
-  /* Tags */
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-  }
-  .tag {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 11.5px;
-    font-weight: 400;
-    color: #085041;
-    background: #e1f5ee;
-    border: 0.5px solid #5dcaa5;
-    border-radius: 999px;
-    padding: 5px 16px;
-    transition: background 0.15s;
-    cursor: default;
-  }
-  .tag:hover {
-    background: #9fe1cb;
   }
 
   :root {
@@ -146,63 +75,90 @@
     margin: 0 auto;
   }
 
-  .feature-header {
-    text-align: center;
-    margin-bottom: 50px;
-    border-bottom: 2px solid var(--light-bg);
-    padding-bottom: 30px;
-  }
-
+ 
   .title {
-    color: black;
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight:800;
-    font-style:normal;
+    font-family: var(--ff-display);
+    font-size: 48px;      /* 48px */
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--color-ink);
+    line-height: 1.05;
+    margin: 0 0 2rem 0;
+    transition: color 0.3s ease;
     
   }
 
-  .lead-text {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
+  .freight-market-para-1 {
+    font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
     font-weight: 500;
-    color: black;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
 
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+  .freight-market-para-2 {
+   font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
+   
   }
 
-  .feature-card {
-    background: var(--light-bg);
-    padding: 25px;
-    border-left: 4px solid var(--accent-blue);
-    transition: transform 0.3s ease;
-    font-weight:500;
-    color: black;
+  .freight-market-para-3 {
+ font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
 
-  .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  .freight-market-para-4 {
+   font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
 
-  .feature-card h3 {
-    color: black;
-    margin-top: 0;
-    font-size: 1.25rem;
+  .freight-market-para-5 {
+    font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
 
   .feature-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-style: italic;
-    color: var(--primary-navy);
+    font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
 
    

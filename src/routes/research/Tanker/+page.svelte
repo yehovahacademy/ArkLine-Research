@@ -1,11 +1,5 @@
 <script>
-  const tags = [
-    'Vessel utilisation',
-    'Route economics',
-    'Cargo flows',
-    'Fleet positioning',
-    'Chartering risks',
-  ];
+ 
 </script>
 
 <link
@@ -14,15 +8,11 @@
 />
 
 
-<div class="hero"></div>
-<section class="tanker-para">
-  <div class="badge">
-    <span class="badge-dot"></span>
-    <span class="badge-text">Market intelligence</span>
-  </div>
 
-  <h1>Tanker <em>Shipping</em></h1>
-  <p class="sub">Commercial &amp; operational intelligence</p>
+<section class="tanker-para">
+  
+  <h1>Tanker Shipping</h1>
+  
 
   <div class="rule-wrap">
     <span class="rule"></span>
@@ -51,33 +41,21 @@
     enabling market participants to better understand the drivers affecting freight performance.
   </p>
   <p class="body-text">
+    Our intelligence supports shipowners, operators, and traders by improving visibility into tanker market conditions and helping assess the risks and opportunities created by changing freight environments. By identifying the commercial implications of tanker market developments, we help stakeholders respond with better timing, improved planning, and stronger market awareness.
+  </p>
+  <p class="body-text">
     Through practical analysis and focused market insight, ARKLINE RESEARCH enables more
     informed chartering decisions, improved exposure management, and stronger commercial
     performance across tanker operations.
   </p>
 
-  <div class="tags">
-    {#each tags as tag}
-      <span class="tag">{tag}</span>
-    {/each}
-  </div>
+ 
 </section>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Instrument+Sans:wght@300;400;500&display=swap');
 
-  .hero {
-     height: 100vh;
-    border-radius:35px;
-     background-image:  linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ), url('/Tanker.png');
-     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
-
+  
   .tanker-para {
     display: flex;
     flex-direction: column;
@@ -88,60 +66,18 @@
     margin: 0 auto;
   }
 
-  /* Badge */
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #e1f5ee;
-    border: 0.5px solid #5dcaa5;
-    border-radius: 999px;
-    padding: 5px 16px;
-    margin-bottom: 2rem;
-  }
-  .badge-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #1d9e75;
-    flex-shrink: 0;
-  }
-  .badge-text {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: #085041;
-  }
-
   /* Heading */
   h1 {
-      font-size:3.5rem;
-    color:black;
-    margin-bottom: 35px;
-    padding-bottom: 15px;
-    position: relative;
-    letter-spacing: -0.02em;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-  h1 em {
-    font-style:normal;
-    color:black;
-    font-weight: bold;
-  }
-
-  /* Subtitle */
-  .sub {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 11px;
+       font-family: var(--ff-display);
+    font-size: 48px;      /* 48px */
     font-weight: 400;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #1d9e75;
-    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    color: var(--color-ink);
+    line-height: 1.05;
+    margin: 0 0 2rem 0;
+    transition: color 0.3s ease;
   }
+ 
 
   /* Rule divider */
   .rule-wrap {
@@ -164,38 +100,17 @@
 
   /* Body */
   .body-text {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 16px;
+   font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
     font-weight: 500;
     line-height: 1.85;
-    color: black;
-    max-width: 520px;
-    margin-bottom: 1.25rem;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
   }
   .body-text:last-of-type {
     margin-bottom: 2rem;
-  }
-
-  /* Tags */
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-  }
-  .tag {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 11.5px;
-    font-weight: 400;
-    color: #085041;
-    background: #e1f5ee;
-    border: 0.5px solid #5dcaa5;
-    border-radius: 999px;
-    padding: 5px 16px;
-    transition: background 0.15s;
-    cursor: default;
-  }
-  .tag:hover {
-    background: #9fe1cb;
   }
 </style>

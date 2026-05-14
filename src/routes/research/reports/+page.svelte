@@ -1,4 +1,4 @@
-<div class="hero"></div>
+
 
 
 <div class="Reports-para">
@@ -12,17 +12,7 @@
 
 
 <style>
-  .hero {
-      height: 100vh;
-    border-radius:35px;
-     background-image:  linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ), url('/Report.png');
-     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+ 
 
   /* Root variables for consistent branding */
   :root {
@@ -33,89 +23,50 @@
     --border-color: #e2e8f0;
   }
 
-  .Reports-para {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 60px;
-    background-color: #ffffff;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    color: black;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+.Reports-para {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+.Reports-para h1 {
+ font-family: var(--ff-display);
+    font-size: 48px;      /* 48px */
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--color-ink);
+    line-height: 1.05;
+    transition: color 0.3s ease;
+    text-align:center;
   }
 
-  /* Professional Heading Style */
-  .Reports-para h1 {
-    font-size: 2.5rem;
-    color:black;
-    margin-bottom: 35px;
-    padding-bottom: 15px;
-    position: relative;
-    letter-spacing: -0.02em;
-    font-weight: 800;
-    text-transform: uppercase;
-    
-  }
 
-  /* Gold accent underline for the heading */
-  .Reports-para h1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background-color: var(--accent-gold);
-  }
+.Reports-para h1 strong {
+  font-weight: 600;
+   
 
-  /* Lead paragraph styling for more impact */
-  .reports-para-1 {
-    font-size: 1.2rem;
+}
+
+.reports-para-1,
+.reports-para-2,
+.reports-para-3,
+.reports-para-4,
+.reports-para-5 {
+  font-family: var(--ff-body);
+    font-size: 16px;     /* 16px */
     font-weight: 500;
-    color: black;
-    margin-bottom: 25px;
-    line-height: 1.6;
+    line-height: 1.85;
+    color: var(--color-ink);
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--color-line);
+    letter-spacing: 0.15px;
+}
 
-  }
+.reports-para-5 {
+  margin-bottom: 0;
+}
 
-  /* Body paragraphs */
-  .Reports-para p {
-    margin-bottom: 20px;
-    text-align: justify;
-    hyphens: auto;
-    color:black;
-    font-weight: 500;
-  }
 
-  /* Highlight specific paragraphs for visual rhythm */
-  .reports-para-3 {
-    padding-left: 20px;
-    border-left: 3px solid var(--border-color);
-    font-style: italic;
-    color: black;
-    font-weight: 500;
-  }
-
-  /* Emphasis on final takeaway */
-  .reports-para-5 {
-    margin-top: 40px;
-    padding: 25px;
-    background-color: var(--bg-light);
-    border-radius: 4px;
-    font-weight: 500;
-    border: 1px solid var(--border-color);
-  }
-
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .Reports-para {
-      padding: 30px 20px;
-      margin: 20px;
-    }
-    
-    .Reports-para h1 {
-      font-size: 2rem;
-    }
-  }
 </style>
