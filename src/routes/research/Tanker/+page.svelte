@@ -46,7 +46,7 @@
   <p class="body-text">
     Through practical analysis and focused market insight, ARKLINE RESEARCH enables more
     informed chartering decisions, improved exposure management, and stronger commercial
-    performance across tanker operations.
+    performance across tanker operations.Our objective is to provide actionable tanker market intelligence that supports confident decision-making in increasingly dynamic freight markets.
   </p>
 
  
