@@ -49,7 +49,7 @@
     <p class="Introduction-lead">
       ARKLINE Research is the market intelligence and strategic insights division of ARKLINE, focused on decoding the complexities of global maritime trade, freight markets, and energy-linked shipping dynamics. We deliver high-conviction, data-driven insights across tanker shipping, crude and refined product flows, freight volatility, port and logistics developments, trade dislocations, and emerging structural shifts shaping global shipping markets. Our research is built to cut through market noise and identify the deeper commercial drivers influencing freight behavior, vessel demand, trade routes, and market sentiment. At ARKLINE Research, we believe the maritime industry is entering a new era, one increasingly shaped by data, digitalization, geopolitical shifts, energy transition, and real-time market intelligence. Our goal is to bridge the gap between traditional shipping knowledge and modern analytical thinking by producing research that is commercially relevant, practical, and forward-looking. Through market commentary, strategic analysis, and industry intelligence, we aim to support traders, shipowners, operators, charterers, investors, and maritime professionals in making more informed decisions in an increasingly complex global environment. ARKLINE Research serves as the intelligence engine behind ARKLINE’s broader vision of building a more transparent, efficient, and digitally enabled maritime ecosystem.
     </p>
-
+  
   
 
     <div class="Introduction-rule" aria-hidden="true"></div>
