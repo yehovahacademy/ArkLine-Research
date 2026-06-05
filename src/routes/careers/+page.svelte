@@ -1,5 +1,5 @@
 
-<div class="Hero"></div>
+
 <section class="careers-section">
   <div class="careers-container">
     <div class="careers-content">
@@ -26,18 +26,6 @@
   </div>
 </section>
 <style>
-.Hero {
-   height: 100vh;
-    border-radius:35px;
-     background-image:  linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ), url('/careers.png');
-     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
 
   :root {
     --primary-navy: #1a2b3c;
