@@ -24,12 +24,24 @@
   <h2>Strategic Intelligence for Maritime Excellence.</h2>
 </div>
 
+<br><br><br><br>
+
 <!-- ══ INTRO ══ -->
 <section class="Introduction">
 
-  <!-- Left col: logo lockup -->
-  <div class="Introduction-logo-wrap">
-    <span class="Introduction-eyebrow">Est. Research Division</span>
+
+  <!-- Right col: text -->
+  <div class="Introduction-body">
+    <p class="Introduction-label"></p>
+
+    <h1 class="Introduction-heading">
+        Intelligence for Global Maritime Trade
+    </h1>
+
+    <!-- Left col: logo lockup -->
+
+    <div class="Introduction-logo-wrap">
+    <span class="Introduction-eyebrow"></span>
     <img
       class="Introduction-logo"
       src="arkline-logo.jpg"
@@ -37,14 +49,6 @@
     />
     <span class="Introduction-wordmark"></span>
   </div>
-
-  <!-- Right col: text -->
-  <div class="Introduction-body">
-    <p class="Introduction-label">Introduction</p>
-
-    <h1 class="Introduction-heading">
-        Intelligence for<br/>Global Maritime Trade
-    </h1>
 
     <p class="Introduction-lead">
     ARKLINE Research is the market intelligence and strategic insights division of ARKLINE, focused on decoding the complexities of global maritime trade, freight markets, and energy-linked shipping dynamics. We deliver high-conviction, data-driven insights across tanker shipping, crude and refined product flows, freight volatility, port and logistics developments, trade dislocations, and emerging structural shifts shaping global shipping markets. Our research is built to cut through market noise and identify the deeper commercial drivers influencing freight behavior, vessel demand, trade routes, and market sentiment. At ARKLINE Research, we believe the maritime industry is entering a new era, one increasingly shaped by data, digitalization, geopolitical shifts, energy transition, and real-time market intelligence. Our goal is to bridge the gap between traditional shipping knowledge and modern analytical thinking by producing research that is commercially relevant, practical, and forward-looking. Through market commentary, strategic analysis, and industry intelligence, we aim to support traders, shipowners, operators, charterers, investors, and maritime professionals in making more informed decisions in an increasingly complex global environment. ARKLINE Research serves as the intelligence engine behind ARKLINE’s broader vision of building a more transparent, efficient, and digitally enabled maritime ecosystem.
@@ -437,6 +441,7 @@
     --radius-md:  12px;
     --radius-lg:  16px;
     --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 
   /* ══════════════════════════════════════
@@ -508,211 +513,113 @@
        left  → logo lockup (sticky)
        right → text content
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-  .Introduction {
-    margin-top: 1.5rem;
-    padding: 4rem 3.5rem;
-    background: var(--color-surface);
-    border: 0.5px solid var(--color-line);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    transition:
-      background 0.3s ease,
-      border-color 0.3s ease;
- 
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 4rem;
-    align-items: start;
- 
-    /* Entrance animation */
-    animation: intro-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
- 
-  @keyframes intro-fade-up {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
- 
-  /* ── Left: Logo lockup ── */
-  .Introduction-logo-wrap {
-    position: sticky;
-    top: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    animation: intro-fade-up 0.7s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
- 
-  .Introduction-eyebrow {
-    font-family: var(--ff-body);
-    font-size: var(--fs-xs);       /* 11px */
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--color-ink-3);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
- 
-  .Introduction-eyebrow::before {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 0.5px;
-    background: var(--color-line-2);
-    flex-shrink: 0;
-  }
- 
-  .Introduction-logo {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    border-radius: 100%;
-    border: 0.5px solid var(--color-line);
-    padding: 1.5rem;
-    background: var(--color-raised);
-    transition:
-      border-color 0.3s ease,
-      background 0.3s ease,
-      transform 0.3s ease;
-  }
- 
-  .Introduction-logo:hover {
-    transform: scale(1.02);
-    border-color: var(--color-line-2);
-  }
- 
-  .Introduction-wordmark {
-    font-family: var(--ff-display);
-    font-size: 16px;       /* 11px */
-    font-weight: 400;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 500;
-    padding:24px;
+  /* ══════════════════════════════════════════════════════════════════
+   INTRO SECTION (Split Column Layout)
+   ══════════════════════════════════════════════════════════════════ */
+.Introduction {
+  max-width: 960px; /* Optimized line-length for reading large blocks of text */
+  margin: 0 auto;
+  padding: 0 40px 80px 40px;
+  display: flex;
+  flex-direction: column;
+}
 
+/* --- Top Row: Logo Lockup & Label --- */
+.Introduction-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 32px;
+}
+
+.Introduction-eyebrow {
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.Introduction-logo {
+   width: 35%;
+  height: 35%;
+  object-fit: contain;
+  display: block;
+  border-radius: 100%;
+  border: 2px solid var(--ark-blue);
+}
+
+.Introduction-wordmark {
+  font-size: 35px;
+  color: black;
+}
+
+/* --- Middle Row: Headings & Status --- */
+.Introduction-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.Introduction-label {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.Introduction-heading {
+  font-size: 45px;
+  font-weight:900;
+  color:black;
+  line-height: 1.2;
+  margin: 0 0 32px 0;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+/* --- Bottom Row: Full-Width Paragraph --- */
+.Introduction-lead {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  line-height: 1.8;
+  margin: 0 0 40px 0;
+  text-align: center; /* Keeps block alignment sharp like an executive brief */
+  font-family: var(--ff-body);
+}
+
+/* --- Bottom Decorative Rule --- */
+.Introduction-rule {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN (For mobile screens)
+   ══════════════════════════════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .Introduction {
+    padding: 0 20px 60px 20px;
   }
- 
-  /* ── Right: Text content ── */
-  .Introduction-body {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    animation: intro-fade-up 0.7s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
- 
-  /* "Introduction" label — mirrors .Research-Categories-eyebrow */
-  .Introduction-label {
-    font-family: var(--ff-body);
-    font-size: var(--fs-xs);       /* 11px */
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--color-ink-3);
-    margin: 0 0 1rem 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
- 
-  .Introduction-label::before {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 0.5px;
-    background: var(--color-line-2);
-    flex-shrink: 0;
-  }
- 
-  /* Main display heading */
+  
   .Introduction-heading {
-    font-family: var(--ff-display);
-    font-size: 48px;      /* 48px */
-    font-weight: 400;
-    letter-spacing: 4px;
-    color: var(--color-ink);
-    line-height: 1.05;
-    margin: 0 0 2rem 0;
-    transition: color 0.3s ease;
+    font-size: 1.75rem;
+    /*br{ display: none; } /* Allows heading to wrap naturally on tiny screens */
   }
- 
-  .Introduction-heading::after {
-    content: '';
-    display: block;
-    width: 28px;
-    height: 0.5px;
-    background: var(--color-line-2);
-    margin-top: 1.25rem;
-    transition: width 0.3s ease;
-  }
- 
-  .Introduction:hover .Introduction-heading::after {
-    width: 48px;
-  }
- 
-  /* Lead paragraph — mirrors .Research-Para p:first-of-type */
+  
   .Introduction-lead {
-    font-family: var(--ff-body);
-    font-size: 16px;     /* 16px */
-    font-weight: 700;
-    line-height: 1.85;
-    color: var(--color-ink);
-    margin: 0 0 1.5rem 0;
-    padding-bottom: 1.5rem;
-    border-bottom: 0.5px solid var(--color-line);
-    letter-spacing: 0.15px;
+    text-align: left; /* Better readability on mobile viewports */
+    font-size: 1rem;
   }
- 
-  /* Supporting paragraph — mirrors .Research-Para p:not(:first-of-type) */
-  /* Bottom rule */
-  .Introduction-rule {
-    margin-top: 2rem;
-    width: 28px;
-    height: 0.5px;
-    background: var(--color-line-2);
-  }
- 
-  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     RESPONSIVE
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-  @media (max-width: 768px) {
-    .Introduction {
-      padding: 2rem 1.75rem;
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-    }
- 
-    .Introduction-logo-wrap {
-      position: static;
-      flex-direction: row;
-      align-items: center;
-      gap: 1.25rem;
-    }
- 
-    .Introduction-logo {
-      max-width: 72px;
-      padding: 0.75rem;
-    }
- 
-    .Introduction-eyebrow {
-      display: none; /* hidden on mobile; wordmark takes over */
-    }
- 
-    .Introduction-heading {
-      font-size: var(--fs-xl);     /* 36px */
-    }
-  }
+}
 
   /* ══════════════════════════════════════
      ARTICLES CONTAINER
