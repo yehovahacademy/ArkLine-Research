@@ -309,8 +309,8 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 }
 
 .AboutUs-lead-logo {
-  width: 80px;
-  height: 80px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   background: var(--ark-ink);
   display: flex;
@@ -321,8 +321,8 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 }
 
 .AboutUs-lead-logo img {
-  width: 80px;
-  height: 80px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   object-fit: contain;
   display: block;
