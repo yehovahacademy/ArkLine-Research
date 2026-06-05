@@ -122,7 +122,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 
       <div class="AboutFounder-meta">
         <span class="AboutFounder-name">Deepak Chelladurai</span>
-        <span class="AboutFounder-title">Founder, ARKLINE RESEARCH</span>
+        <span class="AboutFounder-title"></span>
       </div>
 
       
@@ -134,6 +134,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
       <p class="AboutFounder-lead">ARKLINE RESEARCH was founded by Deepak Chelladurai, a commercial shipping professional with over a decade of experience across tanker chartering and operations, freight markets, demurrage, and maritime commercial strategy.</p>
       <p>Having worked closely with the commercial and operational realities of global shipping, Deepak has developed deep expertise where freight economics, operational execution, and market risk intersect.</p>
       <p>ARKLINE RESEARCH was created from the belief that the shipping industry needs more than data. It needs practical intelligence that helps commercial teams interpret risk, anticipate market movements, and make better decisions.</p>
+      <p>Through ARKLINE RESEARCH, Deepak combines industry experience with strategic analysis to deliver insights that are practical, commercially relevant, and aligned with the evolving needs of maritime and commodity markets.</p>
       <p>His long-term vision is to build ARKLINE into a leading freight intelligence and maritime technology platform — helping the industry navigate complexity with greater visibility and confidence.</p>
     </div>
 
@@ -423,7 +424,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 }
 
 .pillar-card p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.75;
   color: black;
@@ -471,7 +472,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
   border-radius: 0;
   overflow: hidden;
   border: 0.5px solid var(--ark-border);
-  box-shadow: 4px 4px 0 0 var(--ark-ink);
+  box-shadow: 4px 4px 0 0 black;
 }
 
 .AboutFounder-avatar img {
@@ -487,7 +488,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--ark-ink);
+  background: none;
   color: #fff;
   font-size: 10px;
   font-weight: 600;
@@ -559,7 +560,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 }
 
 .AboutFounder-content p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.95;
   color: black;
@@ -571,7 +572,7 @@ ARKLINE RESEARCH exists to transform complex freight data into actionable commer
 }
 
 .AboutFounder-lead {
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 700 !important;
   color: black !important;
   line-height: 1.5 !important;

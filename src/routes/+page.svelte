@@ -47,18 +47,10 @@
     </h1>
 
     <p class="Introduction-lead">
-      ARKLINE Research is the intelligence engine behind ARKLINE, focused on
-      decoding the complexities of global maritime trade. We deliver
-      high-conviction, data-driven insights across freight markets, tanker
-      shipping, and evolving logistics dynamics — cutting through noise to
-      highlight what truly drives the market.
+      ARKLINE Research is the market intelligence and strategic insights division of ARKLINE, focused on decoding the complexities of global maritime trade, freight markets, and energy-linked shipping dynamics. We deliver high-conviction, data-driven insights across tanker shipping, crude and refined product flows, freight volatility, port and logistics developments, trade dislocations, and emerging structural shifts shaping global shipping markets. Our research is built to cut through market noise and identify the deeper commercial drivers influencing freight behavior, vessel demand, trade routes, and market sentiment. At ARKLINE Research, we believe the maritime industry is entering a new era, one increasingly shaped by data, digitalization, geopolitical shifts, energy transition, and real-time market intelligence. Our goal is to bridge the gap between traditional shipping knowledge and modern analytical thinking by producing research that is commercially relevant, practical, and forward-looking. Through market commentary, strategic analysis, and industry intelligence, we aim to support traders, shipowners, operators, charterers, investors, and maritime professionals in making more informed decisions in an increasingly complex global environment. ARKLINE Research serves as the intelligence engine behind ARKLINE’s broader vision of building a more transparent, efficient, and digitally enabled maritime ecosystem.
     </p>
 
-    <p class="Introduction-supporting">
-      Our mission is to bring transparency and precision to shipping
-      intelligence, building the foundation for a more efficient, data-led, and
-      digitally enabled maritime ecosystem.
-    </p>
+  
 
     <div class="Introduction-rule" aria-hidden="true"></div>
   </div>
@@ -673,7 +665,7 @@
   .Introduction-lead {
     font-family: var(--ff-body);
     font-size: 16px;     /* 16px */
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.85;
     color: var(--color-ink);
     margin: 0 0 1.5rem 0;
@@ -683,16 +675,6 @@
   }
  
   /* Supporting paragraph — mirrors .Research-Para p:not(:first-of-type) */
-  .Introduction-supporting {
-    font-family: var(--ff-body);
-    font-size: 14px;       /* 14px */
-    font-weight: 500;
-    line-height: 1.95;
-    color: black;
-    margin: 1.4rem 0 0 0;
-    letter-spacing: 0.1px;
-  }
- 
   /* Bottom rule */
   .Introduction-rule {
     margin-top: 2rem;
