@@ -87,9 +87,14 @@
       </div>
     </div>
     <div class="svc-card-body">
-      <p>We help clients interpret complex freight data by converting raw market information into meaningful commercial insight.</p>
-      <p>Freight markets generate large volumes of operational, market, and performance data, but data alone does not support decisions unless it is properly analysed in context.</p>
-      <p>Our data interpretation services help identify trends, highlight risks, and reveal the commercial implications behind market developments — enabling clients to make faster, clearer, and more confident decisions.</p>
+      <p>We help clients interpret complex freight data by converting raw market information into meaningful commercial insight.
+Freight markets generate large volumes of operational, market, and performance data, but data alone does not support decisions unless it is properly analysed in context.
+Our data interpretation services help identify trends, highlight risks, and reveal the commercial implications behind market developments, enabling clients to make faster, clearer, and more confident decisions.
+</p>
+<p>Built for Volatile Freight Markets. ARKLINE RESEARCH is built to support traders, shipowners, and operators navigating uncertain and fast-changing freight environments.
+By combining market intelligence with commercial insight, we help businesses reduce uncertainty, improve market visibility, and make better freight decisions where timing, clarity, and informed judgement are critical.
+Our focus is simple: to transform freight complexity into actionable commercial intelligence.
+</p>
     </div>
   </div>
 

@@ -54,9 +54,6 @@
       <h2><i class="fa-solid fa-at"></i>
         Commercial Strategy</h2>
       <p>We deliver strategic insights into chartering decisions, market positioning, freight risk management, and the commercial approaches required to navigate increasingly complex shipping markets. Our research supports smarter strategic planning by helping maritime professionals align market intelligence with commercial action.</p>
-    </div>
-
-    <div class="Research-Category-card Research-Category-card--closing">
       <p>At ARKLINE RESEARCH, the objective is not simply to track the market — but to provide commercially relevant intelligence that enables better decisions in an increasingly dynamic maritime environment.</p>
     </div>
 
@@ -321,29 +318,6 @@
   color: balck;
   margin: 0;
   letter-spacing: 0.1px;
-}
-
-/* ── Closing card ── */
-.Research-Category-card--closing {
-  background: var(--color-raised);
-  border-right: none;
-  justify-content: center;
-  transition:
-    background 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.Research-Category-card--closing p {
-  font-size: 16px;      /* 16px — elevated from body, aligned with lead */
-  font-style: Atops;
-  line-height: 1.85;
-  color: black;
-  letter-spacing: 0.1px;
-  font-weight: 500;
-}
-
-.Research-Category-card--closing:hover {
-  background: var(--color-line);
 }
 
 /* ── Responsive ── */
